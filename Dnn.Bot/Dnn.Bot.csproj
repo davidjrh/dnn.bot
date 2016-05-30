@@ -106,11 +106,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\bot-icon.png" />
+    <Content Include="images\close.png" />
     <Content Include="images\dnnbot-300.png" />
     <Content Include="images\dnnbot-32.png" />
     <Content Include="images\dnnbot-64.png" />
     <Content Include="License.txt" />
+    <Content Include="module.css" />
     <Content Include="ReleaseNotes.txt" />
+    <Content Include="scripts\ItemView.js" />
+    <Content Include="View.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dnn.Bot.dnn">
