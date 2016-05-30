@@ -1,0 +1,70 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DnnBot" type="Module" version="01.00.00">
+      <friendlyName>DnnBot</friendlyName>
+      <description>A chat bot for DNN Platform implemented by using the Microsoft Bot Framework</description>
+      <iconFile>~/DesktopModules/DnnBot/images/dnnbot-32.png</iconFile>
+      <owner>
+        <name>David Rodriguez</name>
+        <organization>David Rodriguez</organization>
+        <url>http://davidjrh.intelequia.com</url>
+        <email>davidjrh@hotmail.com</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\DnnBot</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.00.00.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+          </scripts>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/DnnBot</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>Dnn.Bot.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Microsoft.Bot.Connector.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Microsoft.Rest.ClientRuntime.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>RestSharp.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Twilio.Api.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
