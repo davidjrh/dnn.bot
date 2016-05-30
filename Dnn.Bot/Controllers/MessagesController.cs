@@ -192,7 +192,7 @@ namespace Dnn.Bot.Controllers
                 }
                 return
                     message.CreateReplyMessage(
-                        $"Since last time we talked, I have detected that your website database **dnnfileservice** has an index fragmentation higher than 30%. **Do you want me to index the database for your?**", "en");
+                        $"Since last time we talked, I have detected that your website database **dnnfileservice** has an index fragmentation higher than 30%. **Do you want me to index the database for you?**", "en");
             }
 
             if (m == "sí" || m == "si" || m == "yes")
